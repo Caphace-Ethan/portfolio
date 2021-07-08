@@ -15,23 +15,8 @@
  */
 function(){for(var a=0,b=["ms","moz","webkit","o"],c=0;c<b.length&&!window.requestAnimationFrame;++c)window.requestAnimationFrame=window[b[c]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[b[c]+"CancelAnimationFrame"]||window[b[c]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(b){var c=(new Date).getTime(),d=Math.max(0,16-(c-a)),e=window.setTimeout(function(){b(c+d)},d);return a=c+d,e}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)})}();
 
-
-particleground(document.getElementById('particles-foreground'), {
-  dotColor: 'rgba(255, 255, 255, 1)',
-  lineColor: 'rgba(255, 255, 255, 0.05)',
-  minSpeedX: 0.3,
-  maxSpeedX: 0.6,
-  minSpeedY: 0.3,
-  maxSpeedY: 0.6,
-  density: 20000, // One particle every n pixels
-  curvedLines: false,
-  proximity: 250, // How close two dots need to be before they join
-  parallaxMultiplier: 10, // Lower the number is more extreme parallax
-  particleRadius: 4, // Dot size
-});
-
-particleground(document.getElementById('particles-background'), {
-  dotColor: 'rgba(255, 255, 255, 0.5)',
+particleground(document.getElementById('page-top'), {
+  dotColor: 'rgba(255, 255, 255, 0.9)',
   lineColor: 'rgba(255, 255, 255, 0.05)',
   minSpeedX: 0.075,
   maxSpeedX: 0.15,
@@ -39,7 +24,7 @@ particleground(document.getElementById('particles-background'), {
   maxSpeedY: 0.15,
   density: 30000, // One particle every n pixels
   curvedLines: false,
-  proximity: 20, // How close two dots need to be before they join
+  proximity: 120, // How close two dots need to be before they join
   parallaxMultiplier: 20, // Lower the number is more extreme parallax
-  particleRadius: 2, // Dot size
+  particleRadius: 3, // Dot size
 });

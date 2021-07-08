@@ -11073,7 +11073,7 @@ html {
 }
 
 body {
-  letter-spacing: 0.0625em;
+  letter-spacing: 0.0325em;
 }
 
 #mainNav {
@@ -11344,9 +11344,11 @@ body {
 
 /* ---- stats.js ---- */
 
-#particles-background, #particles-foreground {
-  left: -51%;
-  top: -51%;
+/* #page-top {
+  left: 0%;
+  top: 0%;
   .size(202%);
   .scale3d(.5, .5, 1);
-}
+  
+} */
+

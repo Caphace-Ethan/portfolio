@@ -1,6 +1,4 @@
-
 particlesJS('page-top',
-  
   {
     "particles": {
       "number": {
