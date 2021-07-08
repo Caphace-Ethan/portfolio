@@ -11084,7 +11084,7 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -11273,6 +11273,10 @@ body {
 }
 .contact-section .social a:active {
   color: #fff;
+}
+
+#bio {
+  text-align: justify;
 }
 
 .footer {
