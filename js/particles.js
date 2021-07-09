@@ -55,7 +55,7 @@ $(function() {
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 4,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -92,7 +92,7 @@ $(function() {
           "distance": 400,
           "size": 40,
           "duration": 2,
-          "opacity": 4,
+          "opacity": 2,
           "speed": 3
         },
         "repulse": {
