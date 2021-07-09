@@ -4027,7 +4027,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #64a19d;
+  background-color: #007bff42;
 }
 
 .nav-fill > .nav-link,
@@ -11119,7 +11119,7 @@ body {
   }
   #about_experience{
     width: 98%;
-    margin-left: 8%;
+    margin-left: 24%;
   }
 }
 
@@ -11334,4 +11334,17 @@ body {
   width: 75%;
   margin-left: 16%;
   color: #adb5bd;
+}
+
+#v-pills-tabContent{
+  color: #adb5bd;
+}
+
+#v-pills-tab{
+  margin-left: 30%;
+}
+
+#v-pills-tabContent{
+  margin-top: 2rem;
+  margin-left: 4rem;
 }
