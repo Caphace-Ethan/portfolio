@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Grayscale v7.0.2 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v5.0.2 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -51,26 +41,6 @@
   }
 }
 
-/* This 1 */
-
-@import "lesshat";
-
-/* // START: TEMPLATE */
-@blue: #26bbf0;
-@green: #c2d5a0;
-@red: #cf6a6d;
-@yellow: #ffbc0d;
-
-@black: #343536;
-@black-2: #424950;
-@grey: #89949b;
-@grey-2: #9aa8b1;
-@light-grey: #c4c9cd ;
-@light-grey-2: #dbdfe1;
-@white: #f3f4f5;
-
-
-
 body {
  
   margin: 0;
@@ -82,19 +52,6 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-  .vertical-centered-box {
-    position: absolute;
-    .size(100%);
-    text-align: center;
-    &:after {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      margin-right: -0.25em;
-    }
-  } 
 }
 
 hr {
@@ -1482,11 +1439,13 @@ progress {
   .col-lg-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
+    text-align: justify;
+    margin-left: 8%;
   }
 
   .col-lg-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 70%;
   }
 
   .col-lg-9 {
@@ -11128,7 +11087,8 @@ body {
   }
   #mainNav.navbar-shrink {
     background-color: #0a192fdb;
-    border-bottom: 4px dashed;
+    border-bottom: 1px solid;
+    box-shadow: 0 10px 30px -10px #c0c0c038;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #ffffff;
@@ -11148,6 +11108,14 @@ body {
     color: #64a19d;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
+  }
+  #bio{
+    width: 75%;
+    margin-left: 16%;
+  }
+  #about{
+    width: 98%;
+    margin-left: 4%;
   }
 }
 
@@ -11219,11 +11187,10 @@ body {
 }
 
 .about-section {
-  padding-top: 4rem;
-  background: linear-gradient(to bottom, #0a192f 0%, rgb(10 25 47) 75%, rgb(10 25 47) 100%);
+  padding-top: 1rem;
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .projects-section {
@@ -11342,13 +11309,22 @@ body {
   margin: auto;
 }
 
-/* ---- stats.js ---- */
+/* ---- particles.js container ---- */
 
-/* #page-top {
-  left: 0%;
-  top: 0%;
-  .size(202%);
-  .scale3d(.5, .5, 1);
-  
-} */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
 
+#overlay {
+  position: relative;
+  padding: 50px;
+}
+
+#about_ul{
+  width: 75%;
+  margin-left: 16%;
+  color: #adb5bd;
+}
