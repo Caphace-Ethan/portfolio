@@ -2958,7 +2958,7 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #64a19d;
+  background-color: #64a19db3;
   border-color: #64a19d;
 }
 .btn-primary:hover {
@@ -11115,11 +11115,15 @@ body {
   }
   #about{
     width: 98%;
-    margin-left: 4%;
+    margin-left: 5%;
   }
   #about_experience{
     width: 98%;
-    margin-left: 24%;
+    margin-left: 18%;
+  }
+  #about_project{
+    width: 98%;
+    margin-left: -10%;
   }
 }
 
@@ -11209,7 +11213,8 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.2rem solid #64a19d;
+    color: aliceblue;
   }
 }
 .projects-section .project-text {
