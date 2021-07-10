@@ -11252,7 +11252,7 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .contact-section .card {
   border: 0;
@@ -11276,13 +11276,13 @@ body {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #1cabc4;
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 1);
 }
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(46, 20, 210, 0.9);
 }
 .contact-section .social a:active {
   color: #fff;
