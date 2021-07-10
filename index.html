@@ -9,13 +9,19 @@
         <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="js/jquery.min.js"></script>
 
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
     </head>
     <body style="background-color: #0a192f;">
         <div class="container text-center">
@@ -33,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">02. About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">03. Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">03. Experience</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">04. Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">05. Contact</a></li>
                     </ul>
@@ -54,18 +60,19 @@
                             <br>
                             <b style="color: cornsilk;">Excellent skills</b> in Machine Learning, IoT & Embedded systems, Web
                             Applications development and Programming using Python, C, and Go languages.</p>
-                        <a class="btn btn-primary" href="mailto:ethancaphace@icloud.com">Get In Touch</a>
+                        <a class="btn btn-primary" href="mailto:ethancaphace@icloud.com" style="text-transform: none;padding: 1rem;">Say Hello!</a>
                     </div>
                 </div>
             </div>
             
         </header>
+        <hr style = "width:40%;margin-left: 25%;color: aliceblue;">
         <!-- About-->
         <section class="about-section text-center" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row" style="text-align: right;">
                     <div class="col-lg-7">
-                        <h2 class="text-white-50" style="text-align: left; font-size: larger; margin-left: 2%;">02. <b> About Me</b></h2>
+                        <h2 class="text-white-50" style="text-align: left; font-size: larger; margin-left: 1%;">02. <b> About Me</b></h2>
                         <p class="text-white-50" id="about">An ambitious, team-player Engineer pursued a Bachelor of
                             Engineering in Electronics and Telecommunication, eager to learn and
                             contribute developed knowledge in ICT and Telecommunication industry.
@@ -88,31 +95,107 @@
                
             </div>
         </section>
+        <hr style = "width:40%;margin-left: 25%;color: aliceblue;">
+        <!-- Exprience -->
+         <section class="experience-section text-center" id="experience">
+            <div class="container px-4 px-lg-5">
+                <div class="row" style="text-align: right;">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4" style="text-align: left;">
+                        <h2 class="text-white-50" style="text-align: left; font-size: larger; margin-left: 14%;">03. <b> Experience</b></h2>
+                        <p class="text-white-50" id="about_experience"> Companies and Institutions i have worked:
+                    
+                            <!-- Vertical Pills -->
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">e-Government Authority - RIDC</a>
+                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">StarLabs Co. Ltd Tz</a> 
+                                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Web-Technologies Tz</a> 
+                                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">i~Tech Co. Ltd</a> 
+                            </div>
+                                  
+                    </div>
+                    <div class="col-lg-6" style="color: antiquewhite; text-align: justify;">
+                        <br>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <ul>
+                                        <li>Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
+                                        <li>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>
+                                        <li>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
+                                    </ul>
+                                    
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <ul>
+                                    <li>PPP modern, performant, maintainable code for a diverse array of client and internal projects</li>
+                                    <li>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>
+                                    <li>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <ul>
+                                    <li>WWW modern, performant, maintainable code for a diverse array of client and internal projects</li>
+                                    <li>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>
+                                    <li>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
+                                </ul>  
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                <ul>
+                                    <li>QQQ modern, performant, maintainable code for a diverse array of client and internal projects</li>
+                                    <li>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>
+                                    <li>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
+                                </ul> 
+                            </div>
+                      </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        <hr style = "width:40%;margin-left: 25%;color: aliceblue;">
         <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
+        <section class="projects-section text-center" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
+                    <div class="col-xl-6 col-lg-6">
+                        <h2 class="text-white-50" style="text-align: left; font-size: larger; margin-left: 21%;">04. <b> Projects</b></h2>
+                        <p class="text-white-50" id="about_project"> Projects i have worked on:</p>
+                           <a href="https://github.com/Caphace-Ethan/10Academy" target="_brank"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/Word_Cloud.png" alt="..." /></a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6" style="margin-top: 2rem;">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <h5>Africa Covid19 Twitter Data Analysis using Unsupervised Machine Learning</h5>
+                            <h6> - Topic Modeling and Sentiment Analysis - </h6>
+                            <p class="text-white-50 mb-0">
+                                This analysis focused on analyzing the Covid19 pandemic by discovering tweet's topics and people’s sentiments towards these topics using data obtained from Twitter social media. 
+                                This analysis gives the insight about what people discuss and think about this pandemic.
+                            </p>
+
+                            <a href="https://github.com/Caphace-Ethan/10Academy"><i class="fab fa-github"></i> link1</a>
+                            <a href="https://github.com/Caphace-Ethan/Twitter-Data-Analysis"><i class="fab fa-github"></i> link2</a>
+                            <a href="https://www.linkedin.com/pulse/africa-covid19-twitter-data-analysis-using-machine-learning-caphace"><i class="fab fa-linkedin"></i>link</a>
+
                         </div>
                     </div>
                 </div>
                 <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                           <a href="https://github.com/Caphace-Ethan/Twitter-Data-Analysis" target="_brank"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/Dashboard02.png" alt="..." /></a>
+                           <br style="padding-top: 2rem;">
+                           <a href="https://github.com/Caphace-Ethan/Twitter-Data-Analysis" target="_brank" ><img class="img-fluid mb-3 mb-lg-0" src="assets/img/Topics_relations.png" alt="..." /></a>
+                        </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="featured-text text-center text-lg-left">
+                            <h5>Africa Covid19 Twitter Data Analysis using Unsupervised Machine Learning</h5>
+                            <h6> - Dashboard | Data Visualization and Presentation- </h6>
+                            <p class="text-white-50 mb-0">
+                                Dashboard for Data Visualization and Presentation for the project described above
+                            </p>
+                            <a href="https://github.com/Caphace-Ethan/Twitter-Data-Analysis"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i>Dashboard</a>
+
                         </div>
                     </div>
                 </div>
