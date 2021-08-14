@@ -7719,6 +7719,19 @@ textarea.form-control-lg {
     float: left !important;
   }
 
+  .masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 8rem 0;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
   .float-sm-end {
     float: right !important;
   }
@@ -11151,7 +11164,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding: 10rem 0;
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
@@ -11171,6 +11184,7 @@ body {
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;
+  /* text-align: left; */
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
@@ -11202,6 +11216,7 @@ body {
 }
 .about-section p {
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .projects-section {
@@ -11339,6 +11354,7 @@ body {
   width: 75%;
   margin-left: 16%;
   color: #adb5bd;
+  text-align: left;
 }
 
 #v-pills-tabContent{
