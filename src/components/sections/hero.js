@@ -59,22 +59,38 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
+  const dynamicWhatIdo = [
+    'I conceptualize & plan application\'s, <br> and data projects',
+    'I architect & build scalable applications, <br> and data pipelines',
+    'I conduct tests & debug on applications, <br> and data pipelines',
+    'I deploy & maintain applications, <br> and data pipelines',
+    'I monitor, optimize & scale applications, <br> and data systems',
+  ];
+
+  // Add state for the phrase index
+  const [phraseIndex, setPhraseIndex] = useState(0);
+
+  // Change phrase every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPhraseIndex(prev => (prev + 1 < dynamicWhatIdo.length ? prev + 1 : 0));
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [dynamicWhatIdo.length]);
+
+  const whatIdo = dynamicWhatIdo[phraseIndex];
+
   const one = <h1>Hello 👋🏼, i am</h1>;
   const two = <h2 className="big-heading">Ethani Caphace</h2>;
   // const three = <h3 className='medium-heading'>I architect & build for web-apps <br></br> and data pipelines.</h3>;
-  const three = (
-    <h3 className="medium-heading">
-      I architect & build software's backend, <br></br> and data pipelines.
-    </h3>
-  );
+  const three = <h3 className="medium-heading" dangerouslySetInnerHTML={{ __html: whatIdo }} />;
   const four = (
     <>
       <p>
-        Experienced Application Programmer, specialized in architecting, and development of
-        software's backends using Spring Boot, (Django and Laravel). <br></br>
-        Building scalable, high-performance web applications, APIs, and Data pipelines. Proven
-        ability to deliver robust solutions across diverse domains, adhering to agile methodologies
-        and full software development lifecycle, current working at{' '}
+        Experienced Application Programmer, specialized in architecting, and building scalable, and
+        high-performance Application's backends, APIs, and Data pipelines. Proven ability to deliver
+        robust and resilient solutions across diverse domains, adhering to agile methodologies and
+        full software development lifecycle, current working at{' '}
         <a href="https://www.ega.go.tz" target="_blank" rel="noreferrer">
           e-Government Authority (Tz)
         </a>

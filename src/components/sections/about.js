@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -150,6 +150,34 @@ const About = () => {
     'Apache Airflow',
     'Apache Kafka',
   ];
+  const dynamicSpaceTimePhrase = [
+    'Navigate the cosmos to now',
+    'Traverse through the continuum to today',
+    'Journey through the fabric of space-time to now',
+    'Travel through the cosmic tapestry to today',
+    'Explore the universe to now',
+    'Venture through the cosmic expanse to today',
+    'Embark on a cosmic journey to now',
+    'Wander through the cosmic realms to today',
+    'Roam through the cosmic corridors to now',
+    'Drift through the celestial pathways to today',
+    'Cross the boundaries of time and space to today',
+  ];
+
+  // Add state for the phrase index
+  const [phraseIndex, setPhraseIndex] = useState(
+    Math.floor(Math.random() * dynamicSpaceTimePhrase.length),
+  );
+
+  // Change phrase every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPhraseIndex(prev => (prev + 1 < dynamicSpaceTimePhrase.length ? prev + 1 : 0));
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [dynamicSpaceTimePhrase.length]);
+
+  const phrase = dynamicSpaceTimePhrase[phraseIndex];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -167,20 +195,36 @@ const About = () => {
               </a>
               , driven by a passion for continuous learning and contributing in the IT industry.
             </p>
-
             <p>
-              Flash forward to the present, and I’ve had the privilege of working at{' '}
-              <a href="https://www.ega.go.tz/" target="_blank" rel="noreferrer">
+              {phrase}, <br></br>
+              I’ve had the privilege of working at <br></br>
+              <a
+                href="https://www.ega.go.tz/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ paddingTop: '5px', display: 'inline-block' }}>
                 e-Government Authority [2020 - 2021] - as IoT & Software Programmer (Intern),
               </a>{' '}
-              <a href="https://10academy.org/" target="_blank" rel="noreferrer">
+              <a
+                href="https://10academy.org/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ paddingTop: '5px', display: 'inline-block' }}>
                 10 Academy - as ML and Data Engineering Trainee [2021],
               </a>{' '}
-              <a href="https://www.omdena.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.omdena.com/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ paddingTop: '5px', display: 'inline-block' }}>
                 Omdena - as Junior Data, and ML Engineer [2021],
               </a>{' '}
               and{' '}
-              <a href="https://www.ega.go.tz/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.ega.go.tz/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ paddingTop: '5px', display: 'inline-block' }}>
                 e-Government Authority - as Application Programmer · fulltime [2021 - Present]
               </a>{' '}
             </p>
