@@ -335,6 +335,7 @@ const Featured = () => {
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const enableFeaturedProjects = false;
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -352,7 +353,9 @@ const Featured = () => {
       </h2>
 
       <StyledProjectsGrid>
-        {featuredProjects &&
+        Coming soon ... <br />
+        {enableFeaturedProjects &&
+          featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover, cta } = frontmatter;

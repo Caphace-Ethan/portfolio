@@ -195,6 +195,7 @@ const Projects = () => {
   const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const hideOtherProjects = true;
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -263,7 +264,9 @@ const Projects = () => {
     );
   };
 
-  return (
+  return hideOtherProjects ? (
+    <></>
+  ) : (
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
 
