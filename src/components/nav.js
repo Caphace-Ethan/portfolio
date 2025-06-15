@@ -208,7 +208,7 @@ const Nav = ({ isHome }) => {
   const ResumeLink = (
     <a
       className="resume-button"
-      href="/ethan-caphace-cv.pdf"
+      href="/portfolio/ethan-caphace-cv.pdf"
       target="_blank"
       rel="noopener noreferrer">
       Resume
