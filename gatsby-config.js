@@ -3,9 +3,9 @@ const config = require('./src/config');
 module.exports = {
   pathPrefix: '/portfolio', // if your repo is github.com/your-username/portfolio
   siteMetadata: {
-    title: 'Ethani Caphace | Application Programer',
+    title: 'Ethani Caphace | Application Programmer',
     description:
-      'Ethani Caphace is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'Application Programmer who specializes in architecting & building scalable, and high-performance Application\'s backends, APIs, and Data pipelines',
     siteUrl: 'https://caphace-ethan.github.io/portfolio', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@Ethan616',
