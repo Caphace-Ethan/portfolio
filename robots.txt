@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://caphace-ethan.github.io/portfolio/sitemap-index.xml
+Host: https://caphace-ethan.github.io
