@@ -41,10 +41,20 @@
    npm run build
    ```
 
-1. Preview the site as it will appear once deployed
+2. Preview the site as it will appear once deployed
 
    ```sh
    npm run serve
+   ```
+
+3. Deploy to GitHub pages
+
+   ```sh
+   yarn add gh-pages
+
+   -- Incase gh-pages dependency is not yet installed
+
+   yan deploy
    ```
 
 ## 🎨 Color Reference
