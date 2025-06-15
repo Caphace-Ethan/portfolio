@@ -2,7 +2,7 @@
   <img alt="Logo" src="https://raw.githubusercontent.com/Caphace-Ethan/portfolio/main/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
-  https://caphace-ethan.github.io/portfolio -v0.01
+  https://caphace-ethan.github.io/portfolio - v0.01
 </h1>
 
 ![demo](https://raw.githubusercontent.com/Caphace-Ethan/portfolio/main/src/images/ethan-landing.png)
