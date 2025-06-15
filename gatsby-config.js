@@ -1,6 +1,7 @@
 const config = require('./src/config');
 
 module.exports = {
+  pathPrefix: '/portfolio', // if your repo is github.com/your-username/portfolio
   siteMetadata: {
     title: 'Ethani Caphace | Application Programer',
     description:
