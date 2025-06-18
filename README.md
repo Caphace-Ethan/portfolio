@@ -54,7 +54,7 @@
 
    -- Incase gh-pages dependency is not yet installed
 
-   yan deploy
+   yarn deploy
    ```
 
 ## 🎨 Color Reference
