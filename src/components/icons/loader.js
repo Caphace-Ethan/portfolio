@@ -1,10 +1,10 @@
 import React from 'react';
 
 const IconLoader = () => (
-  <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <svg id="loaderLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <title>Loader Logo</title>
     <g>
-      <g id="E" transform="translate(11.000000, 5.000000)">
+      <g id="logoE" transform="translate(11.000000, 5.000000)">
         <path
           d="M50,30.3 L28.5,30.3 L28.5,61 L50,61 L50,56.5 L33.6,56.5 L33.6,47.5 L48,47.5 L48,43.2 L33.6,43.2 L33.6,34.8 L50,34.8 L50,30.3 Z"
           fill="currentColor"

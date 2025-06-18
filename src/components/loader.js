@@ -46,20 +46,20 @@ const Loader = ({ finishLoading }) => {
 
     loader
       .add({
-        targets: '#logo path',
+        targets: '#loaderLogo path',
         delay: 300,
         duration: 1500,
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
       })
       .add({
-        targets: '#logo #E',
+        targets: '#loaderLogo #logoE',
         duration: 700,
         easing: 'easeInOutQuart',
         opacity: 1,
       })
       .add({
-        targets: '#logo',
+        targets: '#loaderLogo',
         delay: 500,
         duration: 300,
         easing: 'easeInOutQuart',
